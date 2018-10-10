@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="pref_language_option_labels">
+        <item>@string/pref_language_SYS_label</item>
+        <item>@string/pref_language_RUS_label</item>
+    </array>
+
+    <array name="pref_language_option_values">
+        <item>@string/pref_language_SYS_value</item>
+        <item>@string/pref_language_RUS_value</item>
+    </array>
+
+    <array name="pref_income_category_quantity_labels">
+        <item>@string/pref_income_quantity_2_label</item>
+        <item>@string/pref_income_quantity_4_label</item>
+        <item>@string/pref_income_quantity_6_label</item>
+        <item>@string/pref_income_quantity_8_label</item>
+    </array>
+
+    <array name="pref_income_category_quantity_values">
+        <item>@string/pref_income_quantity_2_value</item>
+        <item>@string/pref_income_quantity_4_value</item>
+        <item>@string/pref_income_quantity_6_value</item>
+        <item>@string/pref_income_quantity_8_value</item>
+    </array>
+
+    <array name="pref_cost_category_quantity_labels">
+        <item>@string/pref_cost_quantity_2_label</item>
+        <item>@string/pref_cost_quantity_4_label</item>
+        <item>@string/pref_cost_quantity_6_label</item>
+        <item>@string/pref_cost_quantity_8_label</item>
+        <item>@string/pref_cost_quantity_10_label</item>
+        <item>@string/pref_cost_quantity_12_label</item>
+        <item>@string/pref_cost_quantity_14_label</item>
+        <item>@string/pref_cost_quantity_16_label</item>
+    </array>
+
+    <array name="pref_cost_category_quantity_values">
+        <item>@string/pref_cost_quantity_2_value</item>
+        <item>@string/pref_cost_quantity_4_value</item>
+        <item>@string/pref_cost_quantity_6_value</item>
+        <item>@string/pref_cost_quantity_8_value</item>
+        <item>@string/pref_cost_quantity_10_value</item>
+        <item>@string/pref_cost_quantity_12_value</item>
+        <item>@string/pref_cost_quantity_14_value</item>
+        <item>@string/pref_cost_quantity_16_value</item>
+    </array>
+
+    <array name="pref_currency_option_labels">
+        <item>@string/pref_currency_default_RUB_label</item>
+        <item>USD</item>
+        <item>EUR</item>
+        <item>BYN</item>
+        <item>UAH</item>
+        <item>AZN</item>
+        <item>LTL</item>
+        <item>TMT</item>
+        <item>KGS</item>
+        <item>KZT</item>
+        <item>MNT</item>
+        <item>GEL</item>
+        <item>BGN</item>
+        <item>UZS</item>
+        <item>SGD</item>
+    </array>
+
+    <array name="pref_currency_option_values">
+        <item>@string/pref_currency_default_RUB_value</item>
+        <item>USD</item>
+        <item>EUR</item>
+        <item>BYN</item>
+        <item>UAH</item>
+        <item>AZN</item>
+        <item>LTL</item>
+        <item>TMT</item>
+        <item>KGS</item>
+        <item>KZT</item>
+        <item>MNT</item>
+        <item>GEL</item>
+        <item>BGN</item>
+        <item>UZS</item>
+        <item>SGD</item>
+    </array>
+
+    <array name="pref_week_option_values">
+        <item>@string/pref_week_monday_value</item>
+        <item>@string/pref_week_sunday_value</item>
+    </array>
+
+    <array name="pref_week_option_labels">
+        <item>@string/pref_week_monday_label</item>
+        <item>@string/pref_week_sunday_label</item>
+
+    </array>
+
+    <array name="type">
+        <item>@string/type_cost</item>
+        <item>@string/type_income</item>
+    </array>
+
+
+    <string-array name="budget_interval">
+        <item>@string/budget_this_month</item>
+        <item>@string/budget_each_month</item>
+    </string-array>
+
+
+    <string-array name="months">
+        <item>@string/month_january</item>
+        <item>@string/month_february</item>
+        <item>@string/month_march</item>
+        <item>@string/month_april</item>
+        <item>@string/month_may_</item>
+        <item>@string/month_jun_</item>
+        <item>@string/month_july</item>
+        <item>@string/month_august</item>
+        <item>@string/month_september</item>
+        <item>@string/month_october</item>
+        <item>@string/month_november</item>
+        <item>@string/month_december</item>
+
+    </string-array>
+
+
+</resources>

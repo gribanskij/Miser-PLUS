@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Скряга +</string>
+    <string name="Create">Создание</string>
+    <string name="radio_button_day">День</string>
+    <string name="radio_button_month">Месяц</string>
+    <string name="radio_button_week">Неделя</string>
+    <string name="radio_button_set">Задать</string>
+    <string name="title_add_card">Транзакция</string>
+    <string name="title_cost">Расходы</string>
+    <string name="title_income">Доходы</string>
+    <string name="transfer_enable">Перевод со счета</string>
+    <string name="account_hint">Новая сумма</string>
+    <string name="action_info">Помощь</string>
+    <string name="action_rateApp">Оценить приложение</string>
+    <string name="action_settings">Настройки</string>
+    <string name="cancel">Отмена</string>
+    <string name="category_name_general">Общие</string>
+    <string name="dashboard">Обзор</string>
+    <string name="edit_category_hint">Новое название</string>
+    <string name="emptyView">Транзакции за выбранный период не найдены</string>
+    <string name="no_comments">нет коментариев</string>
+    <string name="db_error">Ошибка в базе данных</string>
+    <string name="comment">Коментарии</string>
+    <string name="category_name_categories_quantity">Количество категорий</string>
+    <string name="category_name_categories_name">Названия категорий</string>
+    <string name="Insert_OK">Транзакция добавленна</string>
+    <string name="range_select">Задать период</string>
+    <string name="title_account">Счета</string>
+    <string name="summ_transfer">Сумма перевода</string>
+    <string name="summ">Сумма</string>
+    <string name="pref_currency_label">Валюта</string>
+    <string name="pref_language_label">Язык</string>
+    <string name="edit_title">Редактирование</string>
+    <string name="undo_action">Отменить?</string>
+    <string name="remove_action">Удалено!</string>
+
+    <string-array name="income_category">
+        <item>Зарплата</item>
+        <item>Аванс</item>
+        <item>Бизнес</item>
+        <item>Прочее</item>
+        <item>Прочее</item>
+        <item>Прочее</item>
+        <item>Прочее</item>
+        <item>Прочее</item>
+    </string-array>
+
+    <string-array name="cost_category">
+        <item>Питание</item>
+        <item>Жилье</item>
+        <item>Транспорт</item>
+        <item>Спорт</item>
+        <item>Машина</item>
+        <item>Развлечения</item>
+        <item>Образование</item>
+        <item>Товары для дома</item>
+        <item>Медицина</item>
+        <item>Подарки</item>
+        <item>Кредит</item>
+        <item>Мобильная связь</item>
+        <item>Одежда</item>
+        <item>Прочее</item>
+        <item>Прочее</item>
+        <item>Прочее</item>
+    </string-array>
+
+    <string-array name="accounts">
+        <item>Наличные</item>
+        <item>Карта</item>
+        <item>Счет</item>
+        <item>Депозит</item>
+        <item>Прочее</item>
+        <item>Другое</item>
+    </string-array>
+    <string name="pref_week_label">Первый день недели</string>
+    <string name="pref_week_monday_label">Понедельник</string>
+    <string name="pref_week_sunday_label">Воскресенье</string>
+    <string name="type_cost">Расходы</string>
+    <string name="type_income">Доходы</string>
+    <string name="pref_language_SYS_label">Системный</string>
+    <string name="change_language">Изменения вступят в силу после перезапуска приложения</string>
+    <string name="title_language_dialog">Смена языка</string>
+    <string name="month_jan">Янв</string>
+    <string name="month_feb">Фев</string>
+    <string name="month_mar">Март</string>
+    <string name="month_apr">Апр</string>
+    <string name="month_may">Май</string>
+    <string name="month_jun">Июнь</string>
+    <string name="month_jul">Июль</string>
+    <string name="month_aug">Авг</string>
+    <string name="month_sep">Сент</string>
+    <string name="month_nov">Нояб</string>
+    <string name="month_dec">Дек</string>
+    <string name="expenses_12">Расходы по месяцам</string>
+    <string name="income_12">Доходы по месяцам</string>
+    <string name="disable_ads">Отключить рекламу</string>
+
+    <string-array name="questions">
+        <item>C чего начать?</item>
+        <item>Как изменить количество категорий?</item>
+        <item>Как переименовать категории?</item>
+        <item>Как изменить обозначение валюты?</item>
+        <item>Как изменить сумму счета?</item>
+        <item>Как перевести деньги между счетами?</item>
+        <item>Как добавить транзакцию?</item>
+        <item>Как отредактировать транзакцию?</item>
+        <item>Как удалить транзакцию?</item>
+    </string-array>
+
+
+    <string-array name="questions_budget">
+        <item>О планировщике бюджета</item>
+        <item>Как спланировать бюджет?</item>
+        <item>Как добавить статью бюджета?</item>
+        <item>Как отредактировать статью бюджета?</item>
+        <item>Как удалить статью бюджета?</item>
+    </string-array>
+
+
+    <string-array name="answers_budget">
+       <item>
+            Планировщик бюджета позволяет спланировать годовой и ежемесячный бюджеты.
+            Годовой бюджет состоит из 12 месячных бюджетов, название каждого из 12 совпадает с
+            названием соотвествующего календарного месяца. Количество и название категорий
+            в каждом бюджете соотвествует общим настройкам приложения. С главного экрана приложения
+            можно отслеживать сколько осталось потратить - заработать в текущем месяце чтобы выполненить бюджет.
+        </item>
+        <item>
+            Начать планировать бюджет можно с периодически повторяющихся статей расходов - доходов.
+            Например, если вы каждый месяц получаете примерно одинаковые зарплату и аванс, внесисте их первыми,
+            нажав кнопку «+». Обратите внимание, в режиме внесения статьи бюджета можно выбрать режим «повторить каждый месяц».
+            И статья будет добавлена в каждый месяц начиная с января. Далее можно более детально
+            распланировать бюджет каждого месяца, добавляя соотвествующие статьи доходов - расходов,
+            а также корректирую ранее внесенные. Необходимо следить за тем чтобы соотношение доходы/расходы было положительным.
+            Допускается иметь отрицательное соотношение в некоторых месяцах, но годовой результат должен быть положительным.
+            Оптимальное значение около +20%.
+        </item>
+
+        <item>
+            Добавить статью бюджета можно с любого экрана планировщика, нажав
+            кнопку «+». Далее появится диалоговое окно, в котором можно внести
+            необходимые сведения.
+        </item>
+        <item>
+            Отредактировать статью бюджета можно на экране детального
+            отображения соответствующей категории. Проведите,
+            не отрывая пальца, по статье бюджета вправо, запуститься режим редактирования.
+        </item>
+        <item>
+            Удалить статью бюджета можно на экране детального
+            отображения соответствующей категории. Проведите,
+            не отрывая пальца, по статью бюджета влево, запуститься режим удаления.
+        </item>
+    </string-array>
+
+    <string-array name="answers">
+       <item>
+           Прежде всего определитесь с количеством категорий доходов и расходов.
+           Далее переименуйте категории в соответствии с вашими предпочтениями.
+           Затем внесите значения сумм ваших счетов в соответствии с реальным
+           положением дел. Выберите предпочтительную валюту. Далее можно приступить
+           к внесению расходов, доходов за прошлые и текущий периоды.
+        </item>
+        <item>
+            Зайдите в пункт меню «Настройки». В разделе «Количество категорий» выберите необходимое количество категорий.
+        </item>
+
+        <item>
+            Зайдите в пункт меню «Настройки». В разделе «Название категорий» переименуйте категории.
+        </item>
+
+        <item>
+            Зайдите в пункт меню «Настройки». В разделе «Валюта» выберите обозначение валюты.
+        </item>
+        <item>
+            Состояние счетов отображается на первом экране «Обзор». Нажмите и
+            удерживайте нажатой карточку с выбранным счетом. Появится диалоговое
+            окно изменения суммы. Внесите сумму и нажмите «ОК».
+        </item>
+        <item>
+            Состояние счетов отображается на первом экране «Обзор». Нажмите и
+            удерживайте нажатой карточку с выбранным счетом. Появится диалоговое
+            окно изменения суммы. Поставьте галочку на пункте «Перевод» и выберите
+            с какого счета будет списана указанная сумма.
+        </item>
+        <item>
+            Добавить транзакцию можно с любого экрана приложения, нажав
+            кнопку «+». Далее появится диалоговое окно,
+            в котором можно внести необходимые сведения о транзакции.
+        </item>
+        <item>
+            Отредактировать транзакцию можно на экране детального
+            отображения соответствующей категории. Проведите,
+            не отрывая пальца, по транзакции вправо, запуститься режим редактирования.
+        </item>
+        <item>
+            Удалить транзакцию можно на экране детального
+            отображения соответствующей категории. Проведите,
+            не отрывая пальца, по транзакции влево, запуститься режим удаления.
+        </item>
+
+    </string-array>
+
+
+    <string name="info_error_ads_disabling">Ошибка, попробуйте позже</string>
+    <string name="info_disable_ads">Реклама отключена</string>
+    <string name="market_error">Не удалось открыть Play Market. Попробуйте позже</string>
+    <string name="rate_app_text">Пожалуйста, оцените наше приложение!</string>
+    <string name="no_data_graph">Нет значений!</string>
+    <string name="main_notification_channel">Скряга напоминание</string>
+    <string name="addExpenses_notification_main_text">Время внести расходы</string>
+    <string name="addExpenses_notification_title">Скряга уведомляет</string>
+    <string name="pref_notification_label">Напоминание</string>
+    <string name="budgeting">Бюджет: обзор</string>
+    <string name="balance">Доходы/Расходы</string>
+    <string name="title_add_card_budget">Статья бюджета</string>
+    <string name="budget_each_month">Повторить каждый месяц</string>
+    <string name="budget_this_month">Только в этом месяце</string>
+    <string name="Insert_Budget_OK">Статья бюджета добавлена</string>
+    <string name="month_january">Январь</string>
+    <string name="month_february">Февраль</string>
+    <string name="month_march">Март</string>
+    <string name="month_april">Апрель</string>
+    <string name="month_may_">Май</string>
+    <string name="month_jun_">Июнь</string>
+    <string name="month_july">Июль</string>
+    <string name="month_august">Август</string>
+    <string name="month_september">Сентябрь</string>
+    <string name="month_october">Октябрь</string>
+    <string name="month_november">Ноябрь</string>
+    <string name="month_december">Декабрь</string>
+    <string name="month_oct">Окт</string>
+    <string name="year_to_date_budget">Бюджет с нарастающим итогом</string>
+    <string name="year_to_date_budget_perform">Исполнение с нарастающим итогом</string>
+    <string name="budget_left_to_spend">Осталось потратить</string>
+    <string name="budget_left_to_earn">Осталось заработать</string>
+    <string name="monthly_budget">Выполнение месячного бюджета</string>
+    <string name="na">н/д</string>
+    <string name="emptyView_budget">Статьи бюджета не найдены</string>
+    <string name="budgeting_cat_cost">Бюджет: расходы</string>
+    <string name="budgeting_cat_income">Бюджет: доходы</string>
+
+</resources>

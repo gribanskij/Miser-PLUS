@@ -1,0 +1,365 @@
+<resources>
+    <string name="app_name">Miser Plus</string>
+
+    <!-- Menu  items -->
+    <string name="action_rateApp">Rate app</string>
+    <string name="action_info">Help</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- - - - - - - - - - - - - - - -
+    - Used by Preferences  -
+    - - - - - - - - - - - - - - - -->
+
+    <string name="category_name_general">General</string>
+    <string name="category_name_categories_quantity">Number of categories</string>
+    <string name="category_name_categories_name">Category names</string>
+
+    <string name="edit_category_hint">New name</string>
+
+
+    <!-- Key for prefScreen-->
+    <string name="prefscreen_income_key" translatable="false">screen_income</string>
+    <string name="prefscreen_cost_key" translatable="false">screen_cost</string>
+    <string name="prefscreen_account_key" translatable="false">screen_account</string>
+
+
+    <!-- Label for the Currency preference-->
+    <string name="pref_currency_label">Currency</string>
+    <!--Key name for the Currency preference in SharePreferences -->
+    <string name="pref_currency_key" translatable="false">currency</string>
+
+    <string name="pref_currency_default_RUB_label" translatable="false">RUB</string>
+    <string name="pref_currency_default_RUB_value" translatable="false">RUB</string>
+
+    <!-- Label for the Language preference-->
+    <string name="pref_language_label">Language</string>
+    <!--Key name for the Language preference in SharePreferences -->
+    <string name="pref_language_key" translatable="false">language</string>
+
+    <!--Labels for the Language preference-->
+    <string name="pref_language_RUS_label" translatable="false">RUS</string>
+    <string name="pref_language_SYS_label" translatable="true">System</string>
+
+    <!--Values for the Language preference-->
+    <string name="pref_language_RUS_value" translatable="false">rus</string>
+    <string name="pref_language_SYS_value" translatable="false">sys</string>
+
+
+    <!--Key name for the Income categories quantity in SharePreferences -->
+    <string name="pref_income_quantity_key" translatable="false">income_quantity</string>
+    <!-- Title for the Income categories quantity preference-->
+    <string name="title_income">Incomes</string>
+
+    <!--Labels for the Income categories preference-->
+    <string name="pref_income_quantity_2_label" translatable="false">2</string>
+    <string name="pref_income_quantity_4_label" translatable="false">4</string>
+    <string name="pref_income_quantity_6_label" translatable="false">6</string>
+    <string name="pref_income_quantity_8_label" translatable="false">8</string>
+
+    <!--Values for the Income categories preference-->
+    <string name="pref_income_quantity_2_value" translatable="false">2</string>
+    <string name="pref_income_quantity_4_value" translatable="false">4</string>
+    <string name="pref_income_quantity_6_value" translatable="false">6</string>
+    <string name="pref_income_quantity_8_value" translatable="false">8</string>
+
+
+    <!--Key name for the Cost categories quantity in SharePreferences -->
+    <string name="pref_cost_quantity_key" translatable="false">cost_quantity</string>
+    <!-- Title for the Cost categories quantity preference-->
+    <string name="title_cost">Expenses</string>
+
+    <!--Labels for the Cost categories preference-->
+    <string name="pref_cost_quantity_2_label" translatable="false">2</string>
+    <string name="pref_cost_quantity_4_label" translatable="false">4</string>
+    <string name="pref_cost_quantity_6_label" translatable="false">6</string>
+    <string name="pref_cost_quantity_8_label" translatable="false">8</string>
+    <string name="pref_cost_quantity_10_label" translatable="false">10</string>
+    <string name="pref_cost_quantity_12_label" translatable="false">12</string>
+    <string name="pref_cost_quantity_14_label" translatable="false">14</string>
+    <string name="pref_cost_quantity_16_label" translatable="false">16</string>
+
+    <!--Values for the Cost categories preference-->
+    <string name="pref_cost_quantity_2_value" translatable="false">2</string>
+    <string name="pref_cost_quantity_4_value" translatable="false">4</string>
+    <string name="pref_cost_quantity_6_value" translatable="false">6</string>
+    <string name="pref_cost_quantity_8_value" translatable="false">8</string>
+    <string name="pref_cost_quantity_10_value" translatable="false">10</string>
+    <string name="pref_cost_quantity_12_value" translatable="false">12</string>
+    <string name="pref_cost_quantity_14_value" translatable="false">14</string>
+    <string name="pref_cost_quantity_16_value" translatable="false">16</string>
+
+    <!--Key name for the Accounts categories quantity in SharePreferences -->
+    <string name="pref_account_quantity_key" translatable="false">account_quantity</string>
+    <!-- Title for the Accounts categories quantity preference-->
+    <string name="title_account">Accounts</string>
+
+    <!--Labels for the Accounts categories preference-->
+
+    <!--Values for the Accounts categories preference-->
+    <string name="pref_account_quantity_4_value" translatable="false">4</string>
+
+    <!--Key names for the set of startDate and finalDate preferences -->
+    <string name="pref_start_date_calendar_key" translatable="false">start</string>
+    <string name="pref_final_date_calendar_key" translatable="false">final</string>
+
+    <!--Key name for beginWeek preference -->
+    <string name="pref_week_key" translatable="false">week</string>
+    <!--Values for beginWeek preference-->
+    <string name="pref_week_monday_value" translatable="false">2</string>
+    <string name="pref_week_sunday_value" translatable="false">1</string>
+    <string name="pref_week_default_value" translatable="false">2</string>
+
+    <!--Labels for beginWeek preference-->
+    <string name="pref_week_monday_label">Monday</string>
+    <string name="pref_week_sunday_label">Sunday</string>
+    <string name="pref_week_label">First day of week</string>
+
+    <!--Key name for MonthCount preference -->
+
+    <!-- set advertising preference -->
+    <string name="disable_adMob_key" translatable="false">disable</string>
+
+    <string name="info_disable_ads">Purchase for disabling ads done</string>
+    <string name="info_error_ads_disabling">Error, try again later </string>
+
+
+    <!--Key name for Rate_APP preference -->
+    <string name="pref_time_to_rate_key" translatable="false">time</string>
+    <string name="pref_isRate_key" translatable="false">rate</string>
+
+    <!-- Key name for Notification -->
+    <string name="pref_isNotification_key" translatable="false">notification</string>
+    <string name="pref_notification_key" translatable="false">notify_key</string>
+    <string name="pref_notification_label" translatable="true">Notification</string>
+
+
+    <string-array name="income_category">
+        <item>Salary</item>
+        <item>Advance</item>
+        <item>Business</item>
+        <item>Other</item>
+        <item>Other1</item>
+        <item>Other2</item>
+        <item>Other3</item>
+        <item>Other4</item>
+    </string-array>
+
+    <string-array name="cost_category">
+        <item>Food</item>
+        <item>Housing</item>
+        <item>Public transport</item>
+        <item>Sport</item>
+        <item>Car</item>
+        <item>Entertainment</item>
+        <item>Education</item>
+        <item>Goods </item>
+        <item>Medicine</item>
+        <item>Gifts</item>
+        <item>Credit</item>
+        <item>Mobile</item>
+        <item>Clothing</item>
+        <item>Other</item>
+        <item>Other1</item>
+        <item>Other2</item>
+    </string-array>
+
+    <string-array name="accounts">
+        <item>Cash</item>
+        <item>Credit card</item>
+        <item>Bank account</item>
+        <item>Deposit</item>
+        <item>Other</item>
+        <item>Other1</item>
+    </string-array>
+
+    <string name="radio_button_week">Week</string>
+    <string name="radio_button_month">Month</string>
+    <string name="radio_button_day">Day</string>
+    <string name="radio_button_set">Set</string>
+
+
+    <string name="title_add_card">Transaction</string>
+    <string name="title_add_card_budget">Budget item</string>
+
+
+    <string name="Insert_OK">The transaction has been added</string>
+    <string name="Insert_Budget_OK">The budget line has been added</string>
+    <string name="db_error">The database error</string>
+    <string name="no_comments">no comments</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="account_hint">New amount</string>
+    <string name="transfer_enable">Transfer from the account</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="market_error">Could not open Android market, please check if the market app installed
+        or not. Try again later</string>
+
+
+    <string name="comment">Comments</string>
+    <string name="summ">Amount</string>
+    <string name="summ_transfer">Amount of the transfer</string>
+    <string name="emptyView">Transactions for the selected period was not found</string>
+    <string name="range_select">Select a period</string>
+    <string name="Create">Creating</string>
+    <string name="edit_title">Editing</string>
+    <string name="remove_action">Removed!</string>
+    <string name="undo_action">Undo?</string>
+    <string name="type_cost">Expenses</string>
+    <string name="type_income">Incomes</string>
+    <string name="change_language">Changes will take effect after the application is restarted</string>
+    <string name="title_language_dialog">Switch language</string>
+
+
+    <string name="month_jan">Jan</string>
+    <string name="month_feb">Feb</string>
+    <string name="month_mar">Mar</string>
+    <string name="month_apr">Apr</string>
+    <string name="month_may">May</string>
+    <string name="month_jun">Jun</string>
+    <string name="month_jul">Jul</string>
+    <string name="month_aug">Aug</string>
+    <string name="month_sep">Sep</string>
+    <string name="month_oct">Oct</string>
+    <string name="month_nov">Nov</string>
+    <string name="month_dec">Dec</string>
+
+    <string name="month_january">January</string>
+    <string name="month_february">February</string>
+    <string name="month_march">March</string>
+    <string name="month_april">April</string>
+    <string name="month_may_">May</string>
+    <string name="month_jun_">Jun</string>
+    <string name="month_july">July</string>
+    <string name="month_august">August</string>
+    <string name="month_september">September</string>
+    <string name="month_october">October</string>
+    <string name="month_november">November</string>
+    <string name="month_december">December</string>
+
+    <string name="income_12">Incomes by month</string>
+    <string name="expenses_12">Expenses by month</string>
+    <string name="disable_ads">Disable ads</string>
+    <string name="rate_app_text">Please, rate our app!</string>
+    <string name="no_data_graph">No values!</string>
+    <string name="main_notification_channel">Miser reminder</string>
+    <string name="addExpenses_notification_title">Miser reminder</string>
+    <string name="addExpenses_notification_main_text">Time to add costs</string>
+
+    <string name="budgeting">Budget: dashboard</string>
+    <string name="budgeting_cat_cost">Budget: expenses</string>
+    <string name="budgeting_cat_income">Budget: incomes</string>
+    <string name="balance">Incomes/Expenses</string>
+    <string name="year_to_date_budget">Year-to-date budget</string>
+    <string name="year_to_date_budget_perform">Year-to-date budget perform</string>
+    <string name="budget_this_month">Only this month</string>
+    <string name="budget_each_month">Repeat every month</string>
+    <string name="budget_left_to_spend">Left to spend</string>
+    <string name="budget_left_to_earn">Left to earn</string>
+    <string name="monthly_budget">Budget monthly perform</string>
+    <string name="na">n/a</string>
+
+    <string name="emptyView_budget">Budget items not found</string>
+
+    <!-- - - - - - - - - - - - - - - -
+      - Used by HelpFragment  -
+      - - - - - - - - - - - - - - - -->
+
+    <string-array name="questions">
+        <item>How to begin?</item>
+        <item>How to change the number of categories?</item>
+        <item>How to rename categories?</item>
+        <item>How to change the currency designation?</item>
+        <item>How to change the amount of an account?</item>
+        <item>How to transfer money between accounts?</item>
+        <item>How to add a transaction?</item>
+        <item>How to edit a transaction?</item>
+        <item>How to delete a transaction?</item>
+    </string-array>
+
+    <string-array name="answers">
+        <item>
+            First of all, decide the number of categories of incomes and expenses.
+            Next, rename the categories according to your preferences.
+            Then enter the values of the amounts of your accounts in accordance with the real
+            state of affairs. Select your preferred currency. Then you can proceed
+            to the introduction of expenses, incomes for past and current periods.
+        </item>
+        <item>
+            Go to the “Settings” menu item. In the “Number of categories” section,
+            select the required number of categories.
+        </item>
+        <item>
+            Go to the “Settings” menu item. In the “Category name” section, rename the categories.
+        </item>
+        <item>
+            Go to the “Settings” menu item. In the “Currency” section, select the currency designation.
+        </item>
+        <item>
+            Account status is displayed on the first screen “Dashboard”. Click and
+            hold down the card with the selected account. The dialog box for changing
+            the amount appears. Enter the amount and click "OK".
+        </item>
+        <item>
+            Account status is displayed on the first screen “Dashboard”. Click and
+            hold down the card with the selected account. The dialog box for changing
+            the amount appears. Check the "Transfer" checkbox and select the account
+            from which the specified amount will be written off.
+        </item>
+        <item>
+            You can add a transaction from any application screen by clicking
+            “+” button. Next, a dialog box appears,
+            in which you can enter the necessary information about the transaction.
+        </item>
+        <item>
+            You can edit the transaction on the detailed screen
+            display the corresponding category. Swipe on the transaction to the right, start editing mode.
+        </item>
+
+        <item>
+            You can delete a transaction on the detailed screen
+            display the corresponding category. Swipe on the transaction to the left, start the delete mode.
+        </item>
+    </string-array>
+
+    <string-array name="questions_budget">
+        <item>About the budget planner</item>
+        <item>How to plan a budget?</item>
+        <item>How to add a budget item?</item>
+        <item>How to edit a budget item?</item>
+        <item>how to delete a budget item?</item>
+    </string-array>
+
+
+    <string-array name="answers_budget">
+       <item>
+           The budget planner allows you to plan the annual and monthly budgets.
+           The annual budget consists of 12 monthly budgets, the name of each of 12 coincides with
+           the name of the appropriate calendar month. Number and category name
+           in each budget is equal to the general settings of the application. From the main application screen
+           you can track how much is left to spend - earn this month to fulfill the budget.
+        </item>
+        <item>
+            You can start planning the budget with periodically recurring budget items.
+            For example, if you get approximately the same salary each month and advance payment out of their first
+            by tapping the "+" button. Please note, in the mode of entering a budget item, you can select the "repeat every month" mode.
+            And the budget item will be duplicated every month from January. Then you can more details
+            to plan the budget of each month by adding the budget items, as well as editing previously added.
+            It is necessary to ensure that the income/cost ratio is positive. It is allowed to have a negative income/cost ratio
+            in some months, but the annual result should be positive. The optimum value is about + 20%.
+        </item>
+        <item>
+            You can add a budget item from any budget planner screen by tapping "+" button.
+            Next, a dialog box appears in which you can enter necessary information.
+        </item>
+        <item>
+            You can edit the budget item on the detailed screen. Swipe
+            on the budget item to the right, the editing mode will start.
+        </item>
+        <item>
+            You can delete a budget item from the detailed screen.
+            Swipe on the budget item to the left, the delete mode will start.
+        </item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="main_screen">
+
+    <PreferenceCategory android:title="@string/category_name_general">
+
+        <ListPreference
+            android:defaultValue="@string/pref_language_SYS_value"
+            android:entries="@array/pref_language_option_labels"
+            android:entryValues="@array/pref_language_option_values"
+            android:key="@string/pref_language_key"
+            android:title="@string/pref_language_label" />
+        <ListPreference
+            android:defaultValue="@string/pref_currency_default_RUB_value"
+            android:entries="@array/pref_currency_option_labels"
+            android:entryValues="@array/pref_currency_option_values"
+            android:key="@string/pref_currency_key"
+            android:title="@string/pref_currency_label" />
+        <ListPreference
+            android:defaultValue="@string/pref_week_default_value"
+            android:entries="@array/pref_week_option_labels"
+            android:entryValues="@array/pref_week_option_values"
+            android:key="@string/pref_week_key"
+            android:title="@string/pref_week_label" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/pref_notification_key"
+            android:title="@string/pref_notification_label" />
+
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/category_name_categories_quantity">
+
+        <ListPreference
+            android:defaultValue="@string/pref_income_quantity_4_value"
+            android:entries="@array/pref_income_category_quantity_labels"
+            android:entryValues="@array/pref_income_category_quantity_values"
+            android:key="@string/pref_income_quantity_key"
+            android:title="@string/title_income" />
+        <ListPreference
+            android:defaultValue="@string/pref_cost_quantity_10_value"
+            android:entries="@array/pref_cost_category_quantity_labels"
+            android:entryValues="@array/pref_cost_category_quantity_values"
+            android:key="@string/pref_cost_quantity_key"
+            android:title="@string/title_cost" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/category_name_categories_name">
+
+        <PreferenceScreen
+            android:key="@string/prefscreen_income_key"
+            android:title="@string/title_income">
+            <Preference />
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:key="@string/prefscreen_cost_key"
+            android:title="@string/title_cost">
+            <Preference />
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:key="@string/prefscreen_account_key"
+            android:title="@string/title_account">
+            <Preference />
+        </PreferenceScreen>
+
+
+    </PreferenceCategory>
+</PreferenceScreen>

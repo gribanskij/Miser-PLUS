@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gribanskij.miserplus">
+
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:backupAgent=".utils.TheBackupAgent"
+        android:icon="@mipmap/ic_launcher_miser_plus"
+        android:label="@string/app_name"
+        android:restoreAnyVersion="true"
+        android:roundIcon="@mipmap/ic_launcher_miser_plus"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="@string/backup_api_key" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/ADMOB_APP_ID" />
+
+        <activity
+            android:name=".dashboard_screen.DashboardActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:label="@string/action_settings"
+            android:parentActivityName=".dashboard_screen.DashboardActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".help_screen.HelpActivity"
+            android:label="@string/action_info"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".add_screen.AddActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".edit_screen.EditActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".graph_screen.GraphActivity"
+            android:parentActivityName=".dashboard_screen.DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".budget_screen.BudgetActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".dashboard_screen.DashboardActivity"
+            android:theme="@style/AppTheme" />
+
+        <provider
+            android:name=".sql_base.Provider"
+            android:authorities="com.gribanskij.miserplus"
+            android:exported="false" />
+
+        <receiver android:name=".utils.AddExpensesReceiver">
+            <intent-filter>
+                <action android:name="com.gribanskij.miserplus.ADD_EXPENSES" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".budget_category_screen.BudgetCategoryActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".budget_screen.BudgetActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".budget_detail_screen.BudgetDetailActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".budget_category_screen.BudgetCategoryActivity"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>
