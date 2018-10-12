@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 import android.support.v4.content.AsyncTaskLoader;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.os.CancellationSignal;
 import android.support.v4.os.OperationCanceledException;
 
@@ -111,6 +112,8 @@ public class GraphLoader extends AsyncTaskLoader<BarGraphSeries<DataPoint>> {
             List intervals = getMonthIntervals();
             DataPoint[] series = getDataPointSet(type, intervals);
             barGraphSeries = new BarGraphSeries<>(series);
+            barGraphSeries.setSpacing(5);
+            barGraphSeries.setColor(ContextCompat.getColor(getContext(), R.color.colorSeries));
             return barGraphSeries;
 
         } finally {
@@ -128,9 +131,9 @@ public class GraphLoader extends AsyncTaskLoader<BarGraphSeries<DataPoint>> {
         calendar.set(Calendar.MINUTE, 0);
         calendar.set(Calendar.SECOND, 0);
         calendar.set(Calendar.MILLISECOND, 0);
-        calendar.add(Calendar.YEAR, -1);
+        calendar.add(Calendar.MONTH, -6);
 
-        for (int a = 0; a < MONTHS_IN_YEAR + 1; a++) {
+        for (int a = 0; a <= 6; a++) {
             long start = calendar.getTimeInMillis();
             calendar.add(Calendar.MONTH, 1);
             long end = calendar.getTimeInMillis();
@@ -141,11 +144,6 @@ public class GraphLoader extends AsyncTaskLoader<BarGraphSeries<DataPoint>> {
     }
 
     private DataPoint[] getDataPointSet(int type, List<Month> date_set) {
-
-        DataPoint[] dataPoints = new DataPoint[MONTHS_IN_YEAR + 1];
-        for (int i = 0; i < MONTHS_IN_YEAR + 1; i++) {
-            dataPoints[i] = new DataPoint(0, 0);
-        }
 
         String[] projection = new String[]{"SUM" + "(" + MiserContract.TransactionEntry.Cols.AMOUNT + ")"};
         String selection = MiserContract.TransactionEntry.Cols.DATE + " >=  ? AND " +
@@ -164,10 +162,11 @@ public class GraphLoader extends AsyncTaskLoader<BarGraphSeries<DataPoint>> {
         if (mCursor != null) mCursor.registerContentObserver(mObserver);
 
 
+        DataPoint[] dataPoints = new DataPoint[date_set.size()];
         int count = 0;
-        for (Month m : date_set) {
+        int sum = 0;
 
-            int sum = 0;
+        for (Month m : date_set) {
             long start_date = m.getStart();
             long final_date = m.getFinal();
 
@@ -186,6 +185,7 @@ public class GraphLoader extends AsyncTaskLoader<BarGraphSeries<DataPoint>> {
             DataPoint point = new DataPoint(count, sum);
             dataPoints[count] = point;
             count++;
+            sum = 0;
         }
         return dataPoints;
     }

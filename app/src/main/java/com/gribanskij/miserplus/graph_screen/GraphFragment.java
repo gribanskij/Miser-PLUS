@@ -75,9 +75,8 @@ public class GraphFragment extends BaseFragment implements LoaderManager.LoaderC
         graphView = v.findViewById(R.id.graphView_screen);
         DefaultLabelFormatter formatter = new LabelFormatter(getActivity());
         graphView.getGridLabelRenderer().setLabelFormatter(formatter);
-        graphView.getViewport().setMinX(6);
-        graphView.getViewport().setMaxX(12);
         graphView.getViewport().setXAxisBoundsManual(true);
+        graphView.getViewport().setMaxX(6);
         graphView.getGridLabelRenderer().setHighlightZeroLines(false);
         graphView.getGridLabelRenderer().setHorizontalLabelsColor(ContextCompat.getColor(getContext(), R.color.colorGray));
         graphView.getGridLabelRenderer().setVerticalLabelsColor(ContextCompat.getColor(getContext(), R.color.colorGray));
@@ -134,9 +133,6 @@ public class GraphFragment extends BaseFragment implements LoaderManager.LoaderC
         switch (id) {
             case GRAPH_LOADER: {
                 graphView.removeAllSeries();
-                data.setSpacing(5);
-                data.setAnimated(true);
-                data.setColor(ContextCompat.getColor(getContext(), R.color.colorSeries));
                 data.setOnDataPointTapListener(new DataSeriesListener());
                 //data.setDrawValuesOnTop(true);
                 //data.setValuesOnTopColor(Color.RED);

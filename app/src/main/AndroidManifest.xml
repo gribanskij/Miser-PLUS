@@ -64,7 +64,10 @@
             android:authorities="com.gribanskij.miserplus"
             android:exported="false" />
 
-        <receiver android:name=".utils.AddExpensesReceiver">
+        <receiver
+            android:name=".utils.AddExpensesReceiver"
+            android:enabled="true"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.gribanskij.miserplus.ADD_EXPENSES" />
                 <action android:name="android.intent.action.BOOT_COMPLETED" />

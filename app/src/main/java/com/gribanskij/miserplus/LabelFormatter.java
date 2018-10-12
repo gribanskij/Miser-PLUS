@@ -14,6 +14,7 @@ public class LabelFormatter extends DefaultLabelFormatter {
 
 
     private String[] month_names;
+    private Calendar calendar = Calendar.getInstance();
 
     public LabelFormatter(Activity activity) {
         super();
@@ -44,25 +45,70 @@ public class LabelFormatter extends DefaultLabelFormatter {
 
     private String getMonthName(double v) {
 
-        String month_name = "";
-
-        if ((v % 1) != 0) return month_name;
-        int val = (int) v;
-
-        Calendar calendar = Calendar.getInstance();
+        String month_name;
         int current_month = calendar.get(Calendar.MONTH);
+        int valueX = (int) v;
 
-        if (val + current_month < 12) {
-            month_name = month_names[val + current_month];
-        } else {
-            month_name = month_names[(val + current_month) - 12];
+        switch (valueX) {
+
+            case 6: {
+
+                month_name = month_names[current_month];
+                break;
+            }
+            case 5: {
+
+                month_name = getMonth(current_month - 1);
+                break;
+
+            }
+            case 4: {
+                month_name = getMonth(current_month - 2);
+                break;
+
+            }
+            case 3: {
+                month_name = getMonth(current_month - 3);
+                break;
+
+            }
+            case 2: {
+                month_name = getMonth(current_month - 4);
+                break;
+
+            }
+            case 1: {
+                month_name = getMonth(current_month - 5);
+                break;
+
+            }
+            case 0: {
+                month_name = getMonth(current_month - 6);
+                break;
+
+            }
+            default:
+                month_name = "";
         }
+
         return month_name;
+
+
     }
 
     private String getSum(double value) {
 
 
         return null;
+    }
+
+    private String getMonth(int monthIndex) {
+
+        if (monthIndex < 0) {
+            monthIndex = 12 + monthIndex;
+            return month_names[monthIndex];
+        } else {
+            return month_names[monthIndex];
+        }
     }
 }

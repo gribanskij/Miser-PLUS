@@ -229,10 +229,8 @@ public class DashboardFragment extends BaseFragment implements android.support.v
         cost_graph.getGridLabelRenderer().setVerticalLabelsVisible(false);
         cost_graph.getGridLabelRenderer().setHighlightZeroLines(false);
 
-        cost_graph.getViewport().setMinX(6);
-        cost_graph.getViewport().setMaxX(12);
         cost_graph.getViewport().setXAxisBoundsManual(true);
-
+        cost_graph.getViewport().setMaxX(6);
 
         income_graph.getGridLabelRenderer().setLabelFormatter(formatter);
         income_graph.getGridLabelRenderer().setHorizontalLabelsColor(
@@ -240,9 +238,8 @@ public class DashboardFragment extends BaseFragment implements android.support.v
         income_graph.getGridLabelRenderer().setVerticalLabelsVisible(false);
         income_graph.getGridLabelRenderer().setHighlightZeroLines(false);
 
-        income_graph.getViewport().setMinX(6);
-        income_graph.getViewport().setMaxX(12);
         income_graph.getViewport().setXAxisBoundsManual(true);
+        income_graph.getViewport().setMaxX(6);
 
 
         //CardView graphCost = v.findViewById(R.id.cardView3);
@@ -845,18 +842,12 @@ public class DashboardFragment extends BaseFragment implements android.support.v
 
                 case BARGRAPH_DATA_SET_COST: {
                     cost_graph.removeAllSeries();
-                    series.setSpacing(5);
-                    series.setAnimated(true);
-                    series.setColor(ContextCompat.getColor(getContext(), R.color.colorSeries));
                     cost_graph.addSeries(series);
                     break;
                 }
 
                 case BARGRAPH_DATA_SET_INCOME: {
                     income_graph.removeAllSeries();
-                    series.setSpacing(5);
-                    series.setAnimated(true);
-                    series.setColor(ContextCompat.getColor(getContext(), R.color.colorSeries));
                     income_graph.addSeries(series);
                     break;
                 }
