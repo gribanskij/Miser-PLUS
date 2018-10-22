@@ -23,7 +23,7 @@
             android:key="@string/pref_week_key"
             android:title="@string/pref_week_label" />
         <SwitchPreference
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:key="@string/pref_notification_key"
             android:title="@string/pref_notification_label" />
 

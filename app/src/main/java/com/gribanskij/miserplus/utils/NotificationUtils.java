@@ -1,5 +1,6 @@
 package com.gribanskij.miserplus.utils;
 
+import android.app.AlarmManager;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -15,6 +16,8 @@ import android.support.v4.content.ContextCompat;
 
 import com.gribanskij.miserplus.R;
 import com.gribanskij.miserplus.dashboard_screen.DashboardActivity;
+
+import java.util.Calendar;
 
 /**
  * Created by SESA175711 on 21.11.2017.
@@ -70,4 +73,32 @@ public class NotificationUtils {
         Resources resource = context.getResources();
         return BitmapFactory.decodeResource(resource, R.mipmap.ic_launcher_miser_plus);
     }
+
+    public static void setAlarm(Context context) {
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(System.currentTimeMillis());
+        calendar.set(Calendar.HOUR_OF_DAY, 21);
+        calendar.set(Calendar.MINUTE, 0);
+        AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+        alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
+                AlarmManager.INTERVAL_DAY, getPendingIntent(context));
+
+    }
+
+    private static PendingIntent getPendingIntent(Context context) {
+        Intent intent = new Intent();
+        intent.setAction(AddExpensesReceiver.ACTION_ADD_EXPENSES);
+        intent.setClass(context, AddExpensesReceiver.class);
+
+        return PendingIntent.getBroadcast(context,
+                178, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+    }
+
+
+    public static void disableAlarm(Context context) {
+        AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+        alarmManager.cancel(getPendingIntent(context));
+    }
+
 }

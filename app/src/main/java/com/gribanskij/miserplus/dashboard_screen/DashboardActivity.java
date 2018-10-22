@@ -1,8 +1,5 @@
 package com.gribanskij.miserplus.dashboard_screen;
 
-import android.app.AlarmManager;
-import android.app.PendingIntent;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -23,7 +20,6 @@ import com.gribanskij.miserplus.util.IabHelper;
 import com.gribanskij.miserplus.util.IabResult;
 import com.gribanskij.miserplus.util.Inventory;
 import com.gribanskij.miserplus.util.Purchase;
-import com.gribanskij.miserplus.utils.AddExpensesReceiver;
 import com.gribanskij.miserplus.utils.TimeUtils;
 
 import java.util.Calendar;
@@ -86,33 +82,7 @@ public class DashboardActivity extends AbstractActivity {
         setTheme(R.style.AppTheme_NoActionBar);
         super.onCreate(savedInstanceState);
 
-
-        //Start 9:00 pm notification every day.
-
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-
-
-        if (!sharedPreferences.getBoolean((getString(R.string.pref_isNotification_key)), false)) {
-
-            Intent intent = new Intent();
-            intent.setAction(AddExpensesReceiver.ACTION_ADD_EXPENSES);
-            intent.setClass(this, AddExpensesReceiver.class);
-
-            PendingIntent pendingIntent = PendingIntent.getBroadcast(this,
-                    178, intent, PendingIntent.FLAG_UPDATE_CURRENT);
-
-            Calendar calendar = Calendar.getInstance();
-            calendar.setTimeInMillis(System.currentTimeMillis());
-            calendar.set(Calendar.HOUR_OF_DAY, 21);
-            calendar.set(Calendar.MINUTE, 0);
-            AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-            alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
-                    AlarmManager.INTERVAL_DAY, pendingIntent);
-            SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putBoolean(getString(R.string.pref_isNotification_key), true);
-            editor.apply();
-        }
-
 
         if (!sharedPreferences.getBoolean(getString(R.string.pref_isRate_key), false)) {
             int time = sharedPreferences.getInt(getString(R.string.pref_time_to_rate_key), 0);
